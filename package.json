@@ -1,0 +1,21 @@
+{
+  "name": "meme-machine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p node-sass bs",
+    "bs": "browser-sync start --open -f '.' --no-notify --ignore '*.scss'",
+    "node-sass": "node-sass -w style.scss -o .",
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mevanloon/meme-machine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mevanloon/meme-machine/issues"
+  },
+  "homepage": "https://github.com/mevanloon/meme-machine#readme",
+  "description": ""
+}
