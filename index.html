@@ -2,10 +2,33 @@
 <html>
 <head>
 	<title>Meme machine</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- development version, includes helpful console warnings -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
+	<div id="app">
+		<div class="inputs">
+			<input type="text" v-for="(box, i) in currentMeme.textBoxes" placeholder="Text for your meme" v-model="texts[i]">
+			<select v-model="currentMeme">
+				<option v-for="(meme, i) in memes" :value="meme">Meme: {{meme.name}}</option>
+			</select>
+			<button @click="download">Download this meme</button>
+		</div>
+	</div>
+
   <canvas id='canvas'>
   </canvas>
-  <pre id="debug"></pre>
+  <blockquote>
+  	<p>
+  		Inhale the memes
+  		<br/> Exhale the memes
+  		<br/> Inject the memes into my bloodstream
+  		<br/> There are good memes, and there are bad memes
+  		<br/> Why has god abandoned us?
+  	</p>
+  	<cite><a href="https://www.youtube.com/watch?v=wl-LeTFM8zo">Pink Guy</a></cite>
+  </blockquote>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

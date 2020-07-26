@@ -1,0 +1,43 @@
+@charset "UTF-8";
+body {
+  font-size: 15px;
+  max-height: 100%;
+  margin: 0; }
+  body > * {
+    max-width: 800px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+
+#canvas {
+  display: block;
+  background-color: #eee;
+  border: 1px solid gray;
+  height: auto;
+  width: auto;
+  max-width: 90vw;
+  max-height: calc(90vh - (3*30px)); }
+
+.inputs {
+  font-size: 1rem;
+  margin: 1rem 0;
+  display: grid; }
+  .inputs input, .inputs select, .inputs button {
+    -webkit-appearance: none;
+    appearance: none;
+    font: 1rem sans-serif;
+    display: block;
+    margin: .5rem 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #333; }
+
+blockquote {
+  margin: 3rem auto; }
+  blockquote p {
+    font-family: cursive;
+    border-left: 2px solid #111;
+    padding-left: 1rem; }
+  blockquote cite:before {
+    display: inline;
+    content: '—'; }

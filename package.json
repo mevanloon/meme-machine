@@ -4,11 +4,11 @@
   "main": "index.js",
   "scripts": {
     "start": "run-p node-sass bs",
-    "bs": "browser-sync start --open -f '.' --no-notify --ignore '*.scss'",
-    "node-sass": "node-sass -w style.scss -o .",
+    "bs": "browser-sync start --server --open -f '.' --no-notify --ignore '*.scss'",
+    "node-sass": "node-sass -w style.scss -o ."
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPL v3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mevanloon/meme-machine.git"

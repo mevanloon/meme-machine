@@ -1,0 +1,18 @@
+{
+	"drake": {
+		"name": "Drakepost",
+		"src": "/assets/drake.jpg",
+		"textBoxes": [
+			[375, 0, 340, 360],
+			[375, 380, 340, 360]
+		]
+	},
+	"snoop": {
+		"name": "Snoop Dogg says",
+		"src": "/assets/snoop.jpg",
+		"textBoxes": [
+			[375, 0, 340, 360],
+			[375, 380, 340, 360]
+		]
+	}
+}
